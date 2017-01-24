@@ -9,6 +9,9 @@ var dateFormat = require('dateformat');
 
 //for local machine use only
 // var connectionString = 'postgres://' + process.env.POSTGRES_USER + ':' + process.env.POSTGRES_PASSWORD + '@localhost/blog';
+var connectionString = process.env.DATABASE_URL;
+
+
 var PORT = process.env.PORT || 3000;
 // json method
 app.use(bodyParser.json());
